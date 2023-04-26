@@ -54,7 +54,7 @@ jobs:
 
 #      - name: ls -la 
 #        run: cat manifests/k8s.yaml
-3      - uses: okteto/context@2.7.0
+#      - uses: okteto/context@2.7.0
 #        with:
 #          token: ${{secrets.OKTETO_TOKEN }}
 
