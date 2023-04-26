@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [ "main"]
 jobs:
-  maincicd:
+  main-ci-cd:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -58,7 +58,7 @@ jobs:
         with:
           token: ${{secrets.OKTETO_TOKEN }}
 
-     - name: Deploy and Wait
+      - name: Deploy and Wait
         uses: okteto/actions/deploy@v1
         env:
           KUBECONFIG: ${{ steps.namespace.outputs.kubeconfig }}
